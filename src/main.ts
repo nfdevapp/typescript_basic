@@ -255,3 +255,25 @@ const values = [2, 4, 6, 8, 12];
 const hasGreaterThanTen = values.some(num => num > 10);
 
 console.log(hasGreaterThanTen); // true
+
+//Bonus
+const list = [15, 6, 3213, 9, 0, 12, 8464 , 1, 1264, 481, 186, 1031, 194];
+
+const result = list
+    // 1. Sortieren in absteigender Reihenfolge
+    .slice().sort((a, b) => b - a)
+
+    // 2. Quadrieren
+    .map(num => num * num)
+
+    // 3. Die 4 höchsten und 2 niedrigsten entfernen
+    .slice(4, -2)
+
+    // 4. Alle Zahlen entfernen, die durch 4 teilbar sind
+    .filter(num => num % 4 !== 0)
+
+    // 5. Alle Zahlen addieren
+    .reduce((sum, num) => sum + num, 0);
+
+console.log(result); // 231187
+
