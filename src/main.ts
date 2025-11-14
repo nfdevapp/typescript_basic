@@ -125,21 +125,92 @@ const counter = 0;
 const newCounter = counter + 1;
 console.log(newCounter);
 
-let age = 0;
-console.log(typeof age); // number
+let age1 = 0;
+console.log(typeof age1); // number
 
-age = null;
-console.log(typeof age); // object
+age1 = null;
+console.log(typeof age1); // object
 
-age = undefined;
-console.log(typeof age); // undefined
+age1 = undefined;
+console.log(typeof age1); // undefined
 
-age = "any"; // "any" gibt es in JS nicht, nur als String
-console.log(typeof age); // string
+age1 = "any"; // "any" gibt es in JS nicht, nur als String
+console.log(typeof age1); // string
 
-age = "Hallo";
-console.log(typeof age); // string
+age1 = "Hallo";
+console.log(typeof age1); // string
 
-age = 42;
-console.log(typeof age); // number
+age1 = 42;
+console.log(typeof age1); // number
 
+// Aufgabe 1 – Boolesche Werte
+
+const boolTrue = true;
+console.log(boolTrue, "→", Boolean(boolTrue)); // true → true
+
+const boolFalse = false;
+console.log(boolFalse, "→", Boolean(boolFalse)); // false → false
+
+// Aufgabe 2 – Ganzzahlwerte
+
+const one = 1;
+console.log(one, "→", Boolean(one)); // 1 → true
+
+const zero = 0;
+console.log(zero, "→", Boolean(zero)); // 0 → false
+
+const minusOne = -1;
+console.log(minusOne, "→", Boolean(minusOne)); // -1 → true
+
+
+// Aufgabe 3 – Strings
+
+const strHi = "hi";
+console.log(`"${strHi}"`, "→", Boolean(strHi)); // "hi" → true
+
+const strEmpty = "";
+console.log(`"${strEmpty}"`, "→", Boolean(strEmpty)); // "" → false
+
+const strSpace = " ";
+console.log(`"${strSpace}"`, "→", Boolean(strSpace)); // " " → true
+
+const strZero = "0";
+console.log(`"${strZero}"`, "→", Boolean(strZero)); // "0" → true
+
+const strFalse = "false";
+console.log(`"${strFalse}"`, "→", Boolean(strFalse)); // "false" → true
+
+
+// Aufgabe 4 – Arrays
+
+const arrEmpty = [];
+console.log(arrEmpty, "→", Boolean(arrEmpty)); // [] → true
+
+const arrOne = [1];
+console.log(arrOne, "→", Boolean(arrOne)); // [1] → true
+
+const arrZero = [0];
+console.log(arrZero, "→", Boolean(arrZero)); // [0] → true
+
+const arrFalse = [false];
+console.log(arrFalse, "→", Boolean(arrFalse)); // [false] → true
+
+// Aufgabe 5 – Objekte
+
+const objEmpty = {};
+console.log(objEmpty, "→", Boolean(objEmpty)); // {} → true
+
+const objPerson = { name: "John" };
+console.log(objPerson, "→", Boolean(objPerson)); // {name: "John"} → true
+
+
+//Weihnachtsbaum
+function christmasTree(n) {
+    for (let i = 1; i <= n; i++) {
+        const spaces = " ".repeat(n - i);
+        const stars = "*".repeat(2 * i - 1);
+        console.log(spaces + stars);
+    }
+}
+
+christmasTree(5);
