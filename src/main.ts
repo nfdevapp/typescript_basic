@@ -225,4 +225,33 @@ const addNumbersArrow = (a: number, b: number): number => {
 
 const addNumbersArrow2 = (a: number, b: number): number => a + b;
 
+//Zahlen verdoppeln
+const numbers = [1, 2, 3, 4, 5];
 
+const doubled = numbers.map(num => num * 2);
+
+console.log(doubled); // [2, 4, 6, 8, 10]
+
+// Wörter mit mehr als 5 Buchstaben
+const words = ["Hallo", "Programmieren", "Hi", "Javascript", "Haus"];
+
+const longWords = words.filter(word => word.length > 5);
+
+console.log(longWords);
+// ["Programmieren", "Javascript"]
+
+// Summe berechnen
+const nums = [5, 10, 20, 15];
+
+const sum = nums.reduce((acc, curr) => acc + curr, 0);
+
+console.log(sum); // 50
+
+
+
+// prüfen, ob eine Zahl > 10 ist
+const values = [2, 4, 6, 8, 12];
+
+const hasGreaterThanTen = values.some(num => num > 10);
+
+console.log(hasGreaterThanTen); // true
