@@ -1,4 +1,6 @@
 // Schritt 1: Deklariere eine Variable namens ‘age’ vom Typ ‘number’ und weise ihr einen Wert zu.
+import type {Student} from "./student.ts";
+
 let age: number = 25;
 
 // Schritt 2: Deklariere eine Variable namens ‘score’ vom Typ ‘number’ und weise ihr den Wert 0 zu.
@@ -277,3 +279,4 @@ const result = list
 
 console.log(result); // 231187
 
+// const student1:Student = {id:"1", name: "John", age: 12};
