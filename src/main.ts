@@ -115,3 +115,31 @@ if (isAdmin) {
 if (isAdmin === false) {
     console.log("isAdmin is false.");
 }
+
+
+// const counter = undefined;
+// const newCounter = counter + 1;
+// console.log(newCounter);
+
+const counter = 0;
+const newCounter = counter + 1;
+console.log(newCounter);
+
+let age = 0;
+console.log(typeof age); // number
+
+age = null;
+console.log(typeof age); // object
+
+age = undefined;
+console.log(typeof age); // undefined
+
+age = "any"; // "any" gibt es in JS nicht, nur als String
+console.log(typeof age); // string
+
+age = "Hallo";
+console.log(typeof age); // string
+
+age = 42;
+console.log(typeof age); // number
+
