@@ -214,3 +214,15 @@ function christmasTree(n) {
 }
 
 christmasTree(5);
+
+function addNumbers(a: number, b: number): number {
+    return a + b;
+}
+
+const addNumbersArrow = (a: number, b: number): number => {
+    return a + b;
+};
+
+const addNumbersArrow2 = (a: number, b: number): number => a + b;
+
+
